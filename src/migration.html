@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xNULL Farewell</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="chevron-expand" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"></path> </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="ext-link" width="100%" viewBox="0 0 20 20" fill="none"><path d="M9.5 3C9.77614 3 10 3.22386 10 3.5C10 3.77614 9.77614 4 9.5 4H4.5C4.22386 4 4 4.22386 4 4.5V15.5C4 15.7761 4.22386 16 4.5 16H15.5C15.7761 16 16 15.7761 16 15.5V10.5C16 10.2239 16.2239 10 16.5 10C16.7761 10 17 10.2239 17 10.5V15.5C17 16.3284 16.3284 17 15.5 17H4.5C3.67157 17 3 16.3284 3 15.5V4.5C3 3.67157 3.67157 3 4.5 3H9.5ZM16.5 3C16.5374 3 16.5747 3.00436 16.6113 3.0127C16.6347 3.01803 16.6574 3.02559 16.6797 3.03418C16.687 3.03701 16.6939 3.04076 16.7012 3.04395C16.7213 3.05283 16.7409 3.06272 16.7598 3.07422C16.7675 3.07892 16.7757 3.08274 16.7832 3.08789C16.8082 3.10508 16.8317 3.12471 16.8535 3.14648L16.918 3.22461C16.9289 3.24116 16.9356 3.25988 16.9443 3.27734C16.95 3.28857 16.9572 3.29894 16.9619 3.31055C16.9789 3.35212 16.9888 3.39547 16.9941 3.43945C16.9966 3.45953 17 3.47957 17 3.5V7.5C17 7.77614 16.7761 8 16.5 8C16.2239 8 16 7.77614 16 7.5V4.70703L11.8535 8.85352C11.6583 9.04878 11.3417 9.04878 11.1465 8.85352C10.9512 8.65825 10.9512 8.34175 11.1465 8.14648L15.293 4H12.5C12.2239 4 12 3.77614 12 3.5C12 3.22386 12.2239 3 12.5 3H16.5Z" fill="currentColor"></path></symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="info" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="warn" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></symbol>
+    </svg>
+    <header class="container py-4 px-4 px-xl-5 mx-auto">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand me-0" href="/">
+                    <img src="assets/xnull-logo.svg" height="50" alt="xNULL Logo"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarDrawerLabel">Navigation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-lg-flex col-lg justify-content-lg-end justify-content-center">
+                            <a href="/" class="d-block mb-lg-0 mb-3 btn btn-primary me-lg-2">Home</a>
+                            <a href="/migration" class="d-block mb-lg-0 mb-3 btn btn-primary active me-lg-2">Migration</a>
+                            <a href="/tribute" class="d-block btn btn-primary">Tribute</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-xxl py-4 px-4 mx-auto">
+        <section class="my-5">
+            <h1 class="display-1 fw-bold text-body-emphasis text-center">Migration</h1>
+            <div class="pt-5 col-lg lead text-justify">
+                <p>
+                    After the GameSpy shutdown, the in-game server browser stopped working and we had to
+                    switch to using an alternative masterserver developed by xNULL in-house. Since we
+                    don’t own gamespy.com domain, this means that MoH binaries and the Reborn patch
+                    distributed over the years point to the <strong>master.x-null.net</strong> domain.
+                </p>
+                <p>
+                    Masterserver is a system that makes the online server list work, game servers and
+                    game clients need to connect to it.
+                </p>
+                <p>
+                    <strong>master.x-null.net</strong> domain will continue to work till
+                    <strong><span class="text-nowrap">2027-03-01</span></strong> to ensure that everything still works
+                    and to give everyone enough time to transition to other solutions.
+                </p>
+                <p class="mb-5">
+                    You have several different options that you can choose from, depending on your preferences.
+                    What's important is that, no matter which option you choose now, you will have exactly the same
+                    experience when it comes to the masterserver. Same server list and everything.
+                    You are also not obliged to pick one option and stick with it forever.
+                    <strong>You can change your mind at any time.</strong>
+                </p>
+                <p class="h3 text-center">
+                    You need to update your game before <strong><span class="text-nowrap">2027-03-01</span></strong>.
+                    <span class="text-nowrap">You have <strong class="deadline"></strong> to do that!</span>
+                </p>
+            </div>
+        </section>
+        <section class="my-5 x-layout x-gutter" id="xlayout">
+            <aside class="x-sidebar" id="xsidebar">
+                <div class="navbar-expand-lg sticky-lg-top pt-3">
+                    <button class="d-lg-none btn btn-lg btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMigration" aria-controls="navbarMigration" aria-expanded="false" aria-label="Toggle navigation">
+                        On this page
+                        <svg class="icon" aria-hidden="true"> <use xlink:href="#chevron-expand"></use> </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMigration">
+                        <div id="navbar-migration" class="nav-migration">
+                            <ul class="nav nav-pills flex-column fw-bold">
+                                <li>
+                                    <a class="nav-link" href="#moh-reborn">MoH Reborn</a>
+                                    <ul class="nav nav-pills flex-column">
+                                        <li><a class="nav-link ms-3 my-1" href="#moh-reborn-players">Players</a></li>
+                                        <li><a class="nav-link ms-3 my-1" href="#moh-reborn-servers">Server admins</a></li>
+                                        <li><a class="nav-link ms-3 my-1" href="#moh-reborn-patch-tool">Online Patching Tool</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" href="#item-2">333networks</a></li>
+                                <li><a class="nav-link" href="#item-3">OpenMoHAA</a></li>
+                                <li>
+                                    <a class="nav-link" href="#item-4">Other</a>
+                                    <ul class="nav nav-pills flex-column">
+                                        <li><span class="nav-link disabled text-body ms-3 my-1">Volute</span></li>
+                                        <li><span class="nav-link disabled text-body ms-3 my-1">HzM Coop Mod</span></li>
+                                        <li><span class="nav-link disabled text-body ms-3 my-1">MoH Revival</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="x-content order-1">
+                <div class="pt-3" tabindex="0">
+                    <div class="pb-4">
+                        <h2 id="moh-reborn">
+                            MoH Reborn
+                            <a class="anchor-link" href="#moh-reborn"></a>
+                        </h2>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="https://www.mohreborn.com" target="_blank">
+                                mohreborn.com
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <div class="lead">
+                            <p>
+                                <strong>There is a new release of the MoH Reborn 1.12 patch that uses new masterserver domains!</strong>
+                            </p>
+                            <p>
+                                When you visit
+                                <a href="https://www.mohreborn.com/getting-started" target="_blank">
+                                    MoH Reborn › Getting started
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                                </a>, you will see there are binaries for both <strong>players</strong> and <strong>server owners</strong>.
+                                Our patch uses <strong>master.gametir.com</strong> domain, that points to 333networks infrastructure.
+                            </p>
+                            <p>
+                                MoH Reborn uses its own domain so that it can offer long term support and improvements, over current solutions, in the future.
+                            </p>
+                        </div>
+                        <div class="x-alert x-alert-accent">
+                            <p class="x-alert-title">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#info"></use> </svg>
+                                Disclaimer
+                            </p>
+                            <p>
+                                To use MoH Reborn patch you need to own a copy of the full game.
+                            </p>
+                            <p>
+                                <strong>All of our projects require an original, legally purchased copy of the game.</strong>
+                            </p>
+                            <p>
+                                Once you own a copy of the game, you will need to install the patch and use executable binaries
+                                compatible with the game. They are provided together with the patch.
+                            </p>
+                            <p class="fw-bold">
+                                Legal game copy is available for purchase on
+                                <a href="https://www.gog.com/game/medal_of_honor_allied_assault_war_chest" target="_blank">
+                                    gog.com
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                                </a>.
+                            </p>
+                            <p>Our projects are <strong>unofficial</strong>, <strong>community-driven</strong>, <strong>non-commercial</strong> and aren't affiliated in any way with legal
+                                trademark and copyright holders.</p>
+                            <p>Reborn patch and provided binaries use <a href="https://333networks.com/" target="_blank">333networks <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use></a> masterserver infrastructure.
+                                We are greatful for that! Consider making a <a href="https://333networks.com/donate" target="_blank">donation <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use></a> to help them keep their servers running. </p>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <h3 id="moh-reborn-players">
+                            Players
+                            <a class="anchor-link" href="#moh-reborn-players"></a>
+                        </h3>
+                        <p class="lead">
+                            Visit
+                            <a href="https://www.mohreborn.com/getting-started/players" target="_blank">
+                                MoH Reborn › Getting started › Players
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a> for more.
+                        </p>
+                        <div>
+                            <h5>Download the patch</h5>
+                            <ul>
+                                <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_aa_sh_bt.zip">Allied Assault 1.11 + Spearhead 2.15 + Breakthrough 2.40</a></li>
+                                <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_aa.zip">Allied Assault 1.11</a></li>
+                                <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_aa_sh.zip">Allied Assault 1.11 + Spearhead 2.15</a></li>
+                                <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_aa_bt.zip">Allied Assault 1.11 + Breakthrough 2.40</a></li>
+                            </ul>
+                            <h5>Install</h5>
+                            <ul>
+                                <li>Extract (unzip) the archive.</li>
+                                <li>Select all files (and folders) and copy them to your game directory.</li>
+                                <li>When asked to replace files, select "Replace All" option.</li>
+                            </ul>
+                            <h5>You are good to go! Enjoy your game!</h5>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <h3 id="moh-reborn-servers">
+                            Server owners
+                            <a class="anchor-link" href="#moh-reborn-servers"></a>
+                        </h3>
+                        <p class="lead">
+                            Visit
+                            <a href="https://www.mohreborn.com/getting-started/server-owners" target="_blank">
+                                MoH Reborn › Getting started › Server owners
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a> for more.
+                        </p>
+                        <div>
+                            <h5>Download the patch</h5>
+                            <ul>
+                                <li>Allied Assault 1.11<ul>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_aa_win.zip">Reborn Windows</a></li>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_aa_nix.zip">Reborn Linux</a></li>
+                                </ul>
+                                </li>
+                                <li>Spearhead 2.15<ul>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_sh_win.zip">Windows</a></li>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_sh_win_daven.zip">Windows + Daven's fixes</a></li>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_sh_nix.zip">Linux</a></li>
+                                </ul>
+                                </li>
+                                <li>Breakthrough 2.40<ul>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_bt_win.zip">Windows</a></li>
+                                    <li><a href="https://www.mohreborn.com/assets/moh-binaries/mohreborn_server_bt_win_daven.zip">Windows + Daven's fixes</a></li>
+                                    <li>Linux version doesn't exist</li>
+                                </ul>
+                                </li>
+                            </ul>
+                            <h5>Install</h5>
+                            <ul>
+                                <li>Extract (unzip) the archive.</li>
+                                <li>Select all files (and folders) and copy them to your game directory.</li>
+                                <li>When asked to replace files, select "Replace All" option.</li>
+                            </ul>
+                            <h5>You are good to go! Enjoy your game!</h5>
+                            <div class="x-alert x-alert-accent mt-4">
+                                <p class="x-alert-title">
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#info"></use> </svg>
+                                    Running on Linux
+                                </p>
+                                <p>Remember to set files as executable with <code>chmod +x &lt;main executable&gt;</code>, for example <code>chmod +x mohaa_lnxded</code>.</p>
+                                <p>On modern x64 bit distros, you need to install 32bit compatibility layer to run MoH servers.
+                                    For a Debian-based distro that would be:</p>
+                                <p>
+                                    <code>sudo dpkg --add-architecture i386</code><br/>
+                                    <code>sudo apt-get update</code><br/>
+                                    <code>sudo apt-get install libstdc++5:i386</code>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <h3 id="moh-reborn-patch-tool">
+                            Online Patching Tool
+                            <a class="anchor-link" href="#moh-reborn-patch-tool"></a>
+                        </h3>
+                        <p class="lead">
+                            Visit
+                            <a href="https://www.mohreborn.com/getting-started/manual-patching" target="_blank">
+                                MoH Reborn › Getting started › Manual Online Patching
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a> for more.
+                        </p>
+                        <p>
+                            An easy to use patching tool. You drag & drop your binaries and the tool automatically detects if they need patching.
+                            You can patch your binaries with a click of a button and everything happens locally on your computer! There is no upload involved!
+                        </p>
+                        <p>
+                            Use this option if you have all the required files and you only want to patch the game on your own to have working in-game server browser.
+                        </p>
+                        <p>
+                            Keep in mind that with manual patching, you only make the in-game server browser work. You won't get any additional fixes or features that come with full Reborn installation.
+                        </p>
+                    </div>
+                    <div class="pb-4">
+                        <h2 id="item-2">
+                            333networks
+                            <a class="anchor-link" href="#item-2"></a>
+                        </h2>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="https://333networks.com/" target="_blank">
+                                333networks.com
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <p>
+                            333networks team, with the help of people that work on OpenMoHAA,
+                            prepared dedicated instructions on how to use their masterservers directly.
+                            You can find their instructions at
+                            <a href="https://333networks.com/instructions/mohaa" target="_blank">
+                                https://333networks.com/instructions/mohaa
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>.
+                        </p>
+                        <p>
+                            The instructions are basically the same as the ones for the MoH Reborn
+                            with the exception that 333networks binaries point to <strong>master.gonespy.com</strong> masterserver domain,
+                            while MoH Reborn uses the <strong>master.gametir.com</strong> domain.
+                        </p>
+                        <p>
+                            If you don't want to patch your binaries yourself, or you don't want to use MoH Reborn's
+                            masterserver domain, but instead you would prefer to make your game connect directly to
+                            one of the masterserver domains affiliated with 333networks, you can use their instructions
+                            and already patched binaries they provide.
+                        </p>
+                    </div>
+                    <div class="pb-4">
+                        <h2 id="item-3">
+                            OpenMoHAA
+                            <a class="anchor-link" href="#item-3"></a>
+                        </h2>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="https://www.openmohaa.org/" target="_blank">
+                                openmohaa.org
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <p>
+                            OpenMoHAA uses <strong>333networks</strong> masterserver by default.
+                        </p>
+                        <p>
+                            <strong>If you use OpenMoHAA you don't have to do anything more.
+                            Your game will work just fine.</strong>
+                        </p>
+                        <p>
+                            However, if you would like to use different masterserver with OpenMoHAA, for example
+                            <strong>master.gonespy.com</strong> <small>(333networks affiliate)</small> or
+                            <strong>master.gametir.com</strong> <small>(provided by MoH Reborn)</small>
+                            you need to change your server settings.
+                        </p>
+                        <p class="mb-4">
+                            OpenMoHAA supports multiple masterservers all at once. By default, it uses following
+                            masterservers:
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li><strong>master.333networks.com</strong></li>
+                                    <li>cvars:
+                                        <ul>
+                                            <li>com_master0_host: master.333networks.com</li>
+                                            <li>com_master0_msport: 28900</li>
+                                            <li>com_master0_hbport: 27900</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><strong>master.frag-net.com</strong></li>
+                                    <li>cvars:
+                                        <ul>
+                                            <li>com_master1_host: master.frag-net.com</li>
+                                            <li>com_master1_msport: 28900</li>
+                                            <li>com_master1_hbport: 27900</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li><strong>master.errorist.eu</strong></li>
+                                    <li>cvars:
+                                        <ul>
+                                            <li>com_master2_host: master.errorist.eu</li>
+                                            <li>com_master2_msport: 28900</li>
+                                            <li>com_master2_hbport: 27900</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><strong>master-au.unrealarchive.org</strong></li>
+                                    <li>cvars:
+                                        <ul>
+                                            <li>com_master3_host: master-au.unrealarchive.org</li>
+                                            <li>com_master3_msport: 28900</li>
+                                            <li>com_master3_hbport: 27900</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <ul>
+                                    <li><strong>master.noccer.de</strong></li>
+                                    <li>cvars:
+                                        <ul>
+                                            <li>com_master4_host: master.noccer.de</li>
+                                            <li>com_master4_msport: 28900</li>
+                                            <li>com_master4_hbport: 27900</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+
+                            </div>
+                        </div>
+                        <p>
+                            To change one of these masterservers, all you need to do is to configure appropriate cvar
+                            in your server.cfg file (for server) or omconfig.cfg (for players), for example:
+                        </p>
+                        <pre><code>
+seta com_master0_host "master.gonespy.com"
+seta com_master0_msport "28900"
+seta com_master0_hbport "27900"
+                        </code></pre>
+                        <p>
+                            To add new, additional masterserver, you can use cvar with incremented number, for example:
+                        </p>
+                        <pre><code>
+seta com_master5_host "master.gametir.com"
+seta com_master5_msport "28900"
+seta com_master5_hbport "27900"
+                        </code></pre>
+                        <div class="x-alert x-alert-attention">
+                            <p class="x-alert-title">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#warn"></use> </svg>
+                                Warning
+                            </p>
+                            <p>
+                                <strong>OpenMoHAA is in constant development!</strong>
+                            </p>
+                            <p>
+                                At the moment, OpenMoHAA supports maximum of <strong class="text-nowrap">8 masterservers</strong>,
+                                but this might change at any moment and this guide can quickly become out of date.
+                            </p>
+                            <p>
+                                Make sure to check official OpenMoHAA documentation and ask for support on its GitHub
+                                project page or Discord server when something doesn't work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <h2 id="item-4">
+                            Other
+                            <a class="anchor-link" href="#item-4"></a>
+                        </h2>
+                        <p>
+                            There are other places with MoH community resources.
+                        </p>
+                        <p>
+                            If you use Volute, HaZardModding MoH mods or
+                            MoH Revival, you may need to download updates from each respective source.
+                        </p>
+                    </div>
+                    <div class="pb-4">
+                        <h3>Volute</h3>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="https://volute.io" target="_blank">
+                                volute.io
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <p>
+                            Volute is a MoH:AA Anti-Cheat countering hacking and cheating in MoH:AA Multiplayer.
+                            Most community-driven organisations that run MoH leagues and tournaments require it in their
+                            official matches.
+                        </p>
+                        <p>
+                            Brixton, the creator of Volute, updated MoH binaries provided with Volute to use
+                            <strong>master.gonespy.com</strong> masterserver.
+                        </p>
+                        <p>
+                            Make sure to download the newest version and remember that if you want to use Volute, you
+                            have to use game binaries that are whitelisted and allowed by the anti-cheat.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://dl.volute.io/downloads/MOHAA.zip">
+                                    Download MOHAA.exe from volute.io/downloads
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pb-4">
+                        <h3>HzM Coop Mod</h3>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="https://www.hazardmodding.com/" target="_blank">
+                                hazardmodding.com
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <p>
+                            HaZardModding team created very popular co-op mod for Medal of Honor.
+                            We've contacted Christian (chrissstrahl) from HzM group who has updated all of their
+                            MoH mods that come with included binaries to use <strong>master.gonespy.com</strong>
+                            masterserver.
+                        </p>
+                        <p>If you use one of their MoH mods, make sure to download the newest, patched versions.</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.hazardmodding.com/index.php?s=projects#internal_mohaacoop" target="_blank">
+                                    HaZardModding Co-op: Medal of Honor Allied Assault
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.hazardmodding.com/index.php?s=projects#internal_mohaafov" target="_blank">
+                                    HaZardModding: MoH:AA FOV Mod
+                                    <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pb-4">
+                        <h3>MoH Revival</h3>
+                        <h4 class="mb-4">
+                            Website:
+                            <a href="http://mymoh.tk/" target="_blank">
+                                mymoh.tk
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#ext-link"></use> </svg>
+                            </a>
+                        </h4>
+                        <p>
+                            Popular among players "distribution" of Medal of Honor game is also patched.
+                            It uses <strong>master.gametir.com</strong> masterserver.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-xxl py-4 mx-auto">
+        <hr class="mt-5 mb-4">
+        <p class="text-muted mx-4">xNULL Development © 2010 - 2026</p>
+    </footer>
+</body>
+</html>

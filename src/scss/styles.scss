@@ -1,0 +1,114 @@
+// Your variable overrides can go here, e.g.:
+// $h1-font-size: 3rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import "theme";
+@import "glightbox/dist/css/glightbox";
+
+.text-justify {
+  text-align: justify;
+}
+
+.x-layout {
+  display: grid;
+  grid-template-areas: 'sidebar'
+                       'content';
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+}
+@include media-breakpoint-up(lg) {
+  .x-layout {
+    grid-template-areas: 'sidebar content';
+  }
+}
+
+.x-gutter {
+  --bs-gutter-x: 3rem;
+}
+
+.x-header {
+  grid-area: header;
+}
+
+.x-sidebar {
+  grid-area: sidebar;
+}
+
+.x-content {
+  grid-area: content;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  fill: currentcolor;
+}
+
+.nav-migration {
+
+}
+@include media-breakpoint-up(lg) {
+  .nav-migration {
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-right: 1.5rem;
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-dark-border-subtle);
+  }
+}
+
+.anchor-link {
+  font-weight: 400;
+  color: opacify($primary, 0.3);
+  text-decoration: none;
+  opacity: 0;
+  transition: color .15s ease-in-out, opacity .15s ease-in-out;
+}
+.anchor-link:after {
+  content: "#";
+}
+:target > .anchor-link,
+:hover > .anchor-link,
+.anchor-link:hover,
+.anchor-link:focus {
+  color: $primary;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.x-alert {
+  padding: $alert-padding-y $alert-padding-x;
+  border-left: .25em solid;
+  margin-bottom: $alert-margin-bottom;
+}
+
+.x-alert-attention {
+  border-left-color: $warning;
+  background-color: transparentize($warning, .95);
+  .x-alert-title {
+    color: $warning;
+  }
+}
+
+.x-alert-accent {
+  border-left-color: $primary;
+  background-color: transparentize($primary, .95);
+  .x-alert-title {
+    color: $primary;
+  }
+}
+
+.x-alert-title {
+  font-weight: bold;
+}
+
+.gallery-img {
+  max-height: 200px;
+}
+
